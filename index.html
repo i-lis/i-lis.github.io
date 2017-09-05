@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="lan.works">
+		<meta name="description" content="[LAN]のポートフォリオ兼ポータルサイトです">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<style>/*ローディングアニメーション・デモ用*/
+			#loading-anim{
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 1000;
+				width: 100vw;
+				height: 100vh;
+				background: #fff url('loading-anim.gif') center / 30px auto no-repeat;
+				padding: 2em;
+				pointer-events: none;
+				opacity: 0;
+			}
+		</style>
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans&text=AbCghioprtuy">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora">
+		<link rel="stylesheet" href="index.css">
+		<!--link rel="stylesheet" href="assets/1/polifil/S%25C3%25B6nkeKluth_sticky-state/sticky-state.css"-->
+		
+		<title>i-lis</title>
+	</head>
+	
+	<body>
+		<div id="about"></div>
+		<div id="about-tou"></div>
+		<div id="news"></div>
+		<div id="blog"></div>
+		
+		<div id="sounds"></div>
+		<div id="videos"></div>
+		<div id="images"></div>
+		
+		<header>
+			<h1 class="sticky"><a href="/" id="site-name"><div>i</div>-<div>l</div><div>i</div><div>s</div></a></h1>
+			<nav>
+				<ul id="nav_ul-info">
+					<li class="nav-btn-efc_sqr"><a href="#about">about</a></li>
+					<li class="nav-btn-efc_sqr"><a href="#news">news</a></li>
+					<li class="nav-btn-efc_sqr"><a href="/-contact-/" target="_blank">contact</a></li>
+					<li class="nav-btn-efc_sqr"><a href="#blog">blog</a></li>
+				</ul>
+				<ul id="nav_ul-internal-media">
+					<li class="nav-btn-efc_sqr"><a href="#sounds">sounds</a></li>
+					<li class="nav-btn-efc_sqr"><a href="#videos">videos</a></li>
+					<li class="nav-btn-efc_sqr"><a href="#images">images</a></li>
+				</ul>
+				<ul id="nav_ul-external-media">
+					<li>
+						<a target="_blank" href="/fb">
+							<img src="/assets/2/icons/social-btn/FB-f-Logo__blue_50.png" title="Facebook">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="//twitter.com/_deNeb_6932">
+							<img src="/assets/2/icons/social-btn/Twitter_Logo_White_On_Blue.png" title="Twitter">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="//www.youtube.com/channel/UCoY8-f_15D7c3HiSqqHAimA">
+							<img src="/assets/2/icons/social-btn/YouTube-social-icon_red_48px.png" title="Youtube">
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<article id="article-about">
+			<!--ul id="article-about_ul-menu">
+				<li class="article-about_ul_li"><a href="#">home</a></li>
+				<li class="article-about_ul_li"><a href="#news">news</a></li>
+				<li class="article-about_ul_li"><a href="/-contact-/" target="_blank">contact</a></li>
+				<li class="article-about_ul_li"><a href="#blog">blog</a></li>
+				<li class="article-about_ul_li"><a href="#sounds">sounds</a></li>
+				<li class="article-about_ul_li"><a href="#videos">videos</a></li>
+				<li class="article-about_ul_li"><a href="#images">images</a></li>
+				<li class="article-about_ul_li"><a href="">share!</a></li>
+			</ul-->
+			<dl>
+				<dt>
+					<a href="#about"><h2 class="article-title-about">About</h2></a>
+				</dt>
+				<dd class="article-about-desc">
+					about
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</dd>
+				<dt>
+					<a href="#about-tou"><h2 class="article-title-about">Terms of Use / <span id="tou-title-in-jp">ご利用規約</span></h2></a>
+				</dt>
+				<dd class="article-about-desc">
+					<ol>
+						<li>
+							<h3>再利用可能なデータ / <span class="about-h3-en">Available Data</span></h3>
+							<p>当サイトで公開されている画像・音声・動画等のデータは，ダウンロードリンクやシェアボタン等が当サイト内から示されている場合を除き，いかなるメディアにおいても利用・公開を原則禁止します．</p>
+							<p>ダウンロードリンクやシェアボタン等が当サイト内から示されていないデータを利用・公開したい場合は，<a href="/-contact-/" target="_blank" underline>こちら</a>からお問い合わせください．</p>
+						</li>
+						<li>
+							<h3>ライセンスラベル / <span class="about-h3-en">Lincence Label</span></h3>
+							<p>利用・公開を許可しているデータには，それぞれ単一もしくは複数のライセンスラベルが示されています．</p>
+							<p>ライセンスラベルは各データを使用する上で守るべきルールを示しています．</p>
+						</li>
+						<li>
+							<h3>ライセンスラベルの種類 / <span class="about-h3-en">Variety of Licence Label</span></h3>
+							<p>ライセンスラベルには以下の種類があります．各データを使用する際は，よく確認してください．</p>
+							<dl id="dl-v-of-ll">
+								<dt>PD</dt>
+								<dd>
+									<p>著作権が破棄されているため，自由に利用・公開することが可能です．</p>
+								</dd>
+								<dt>BY</dt>
+								<dd>
+									<p>クレジット（原作者名やタイトルなど．各データ毎に指定する情報）を必ず表示した上で利用・公開してください．</p>
+									例：<img src="">
+								</dd>
+								<dt>BY-AP</dt>
+								<dd>
+									<p>クレジット（原作者名やタイトルなど．各データ毎に指定する情報）を可能であれば表示した上で利用・公開してください．</p>
+								</dd>
+								<dt>SA</dt>
+								<dd>
+									<p>データを改変した場合にも必ず，元のデータで示されている全てのライセンスを表示した上で利用・公開してください．</p>
+									例：<img src="">
+								</dd>
+								<dt>SA-AP</dt>
+								<dd>
+									<p>データを改変した場合にも可能であれば，元のデータで示されている全てのライセンス表示した上で利用・公開してください．</p>
+									例：<img src="">
+								</dd>
+								<dt>ND</dt>
+								<dd>
+									<p>営利目的で利用することを許可します．</p>
+								</dd>
+								<dt>NC</dt>
+								<dd>
+									<p>営利目的で利用することを禁止します．</p>
+								</dd>
+								<dt>C2RH</dt>
+								<dd>
+									<p>権利者に問い合わせるか，出典元のサイトの利用規約を確認した上で利用する必要があります．</p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<h3>連絡先 / <span class="about-h3-en">Contact</span></h3>
+							<p>ご要望や質問等がありましたら，<a href="/-contact-/" target="_blank" underline>こちら</a>からお願いします．</p>
+						</li>
+					</ol>
+				</dd>
+			</dl>
+		</article>
+		
+		<article id="article-news" article-title="News">
+			<img class="dd-tmb-img" src="/assets/2/tmb/article-kind-news.png">
+			<h2 class="article-title">News</h2>
+			<dl>
+				<dt>
+					<time>2017-06-06</time>title
+				</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>
+					<time>2017-06-06</time>title
+				</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>
+					<time>2017-06-06</time>title
+				</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+			</dl>
+			<a class="more-info-btn" href="/-news-/">[+] MORE</a>
+		</article>
+		
+		<article id="article-blogs" article-title="Blog">
+			<img class="dd-tmb-img" src="/assets/2/tmb/article-kind-blog.png">
+			<h2 class="article-title">Blog</h2>
+			<dl>
+				<dt>blog1</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>blog2</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+			</dl>
+		</article>
+		
+		<article id="article-sounds" article-title="Sounds">
+			<img class="dd-tmb-img" src="/assets/2/tmb/article-kind-sounds.png">
+			<h2 class="article-title">Sounds</h2>
+			<dl>
+				<dt>Music-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>Music-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>Music-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+			</dl>
+			<a class="more-info-btn" href="/-sounds-/">[+] MORE</a>
+		</article>
+		
+		<article id="article-videos" article-title="Videos">
+			<img class="dd-tmb-img" src="/assets/2/tmb/article-kind-videos.png">
+			<h2 class="article-title">Videos</h2>
+			<dl>
+				<dt>Video-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>Video-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>Video-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+			</dl>
+			<a class="more-info-btn" href="/-videos-/">[+] MORE</a>
+		</article>
+		
+		<article id="article-images" article-title="Images">
+			<h2 class="article-title">Images</h2>
+			<dl>
+				<dt>Image-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>Image-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+				<dt>Image-Title</dt>
+				<dd>
+					<img class="dd-tmb-img" src="/assets/2/dammy-img.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				</dd>
+			</dl>
+			<a class="more-info-btn" href="/-images-/">[+] MORE</a>
+		</article>
+		
+		<div id="big-attention">
+			<h2>Attention</h2>
+			<p>[ ! ] You can't use any resources at this site without confirm and agree <a href="#about-tou">terms of use</a>.</p>
+			<p>当サイト内の素材をご使用の際は<br><a href="#about-tou">ご利用規約</a>をお守りください</p>
+		</div>
+		
+		<footer>
+			<ul id="footer_ul-sp-nav">
+				<li class="nav-btn-efc_sqr"><a href="#">home</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#about">about</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#news">news</a></li>
+				<li class="nav-btn-efc_sqr"><a href="/-contact-/">contact</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#sounds">sounds</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#videos">videos</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#images">images</a></li>
+				<li class="nav-btn-efc_sqr"><a href="">share!</a></li>
+			</ul>
+			<div id="footer_ul-sp-nav-closer"></div>
+			<small>(c) 2017 lan.works</small>
+		</footer>
+		
+		<!--
+			<ul class="article_ul-sp-nav">
+				<li class="nav-btn-efc_sqr"><a href="#">home</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#about">about</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#news">news</a></li>
+				<li class="nav-btn-efc_sqr"><a href="/-contact-/">contact</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#sounds">sounds</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#videos">videos</a></li>
+				<li class="nav-btn-efc_sqr"><a href="#images">images</a></li>
+				<li class="nav-btn-efc_sqr"><a href="">share!</a></li>
+			</ul>
+			<div class="article_ul-sp-nav-closer"></div>
+-->
+		
+		<script src="assets/1/polyfil/S%25C3%25B6nkeKluth_sticky-state/sticky-state.js"></script>
+		<script>
+			// position: stickyがブラウザで使えるかチェックするための関数
+			function detectSticky() {
+				const div = document.createElement('div');
+				div.style.position = 'sticky';
+				// position: stickyがブラウザで使えればtrue、使えなければfalseを返す
+				return div.style.position.indexOf('sticky') !== -1;
+			}
+			// .stickyが指定されている要素に対してposition: stickyを適用させる関数
+			function callStickyState() {
+				// position: stickyを適用させたい要素を引数に指定し、
+				// StickyStateをnewしてインスタンスを返す
+				return new StickyState(document.querySelectorAll('.sticky'));
+			}
+			// もしブラウザでposition: stickyが使えなければ、
+			// callStickyState関数を呼び出す
+			if (!detectSticky()) {
+				callStickyState();
+			}
+		</script>
+	</body>
+
+</html>
